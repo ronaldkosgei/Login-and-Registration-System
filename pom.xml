@@ -17,20 +17,35 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
+
+
+		<!--This dependency is for Spring Boot Starter JDBC module, it provides a set of pre-configured components
+			and settings for working with relational databases in a Spring Boot application. -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jdbc</artifactId>
 		</dependency>
+
+
+		<!--This dependency is for Spring Boot Starter Web module,it provides a pre-configured set of components and settings
+		 for building web applications, including RESTful applications using Spring MVC. -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+
+        <!--This dependency is for PostgreSQL JDBC driver, A JDBC and R2DBC driver that allows Java programs to connect to a
+        PostgreSQL database using standard, database independent Java code. -->
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+
+
+		<!--This dependency Spring Boot Starter Test module, which provides a set of utilities and components
+		for writing unit and integration tests in a Spring Boot application. -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -48,3 +63,13 @@
 	</build>
 
 </project>
+
+
+
+
+
+
+
+
+
+
