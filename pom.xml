@@ -27,6 +27,14 @@
 		</dependency>
 
 
+		<!--This dependency is for Spring Boot Starter JDBC module, it provides a set of pre-configured components
+			and settings for working with relational databases in a Spring Boot application. -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+
 		<!--This dependency is for Spring Boot Starter Web module,it provides a pre-configured set of components and settings
 		 for building web applications, including RESTful applications using Spring MVC. -->
 		<dependency>
@@ -63,12 +71,6 @@
 	</build>
 
 </project>
-
-
-
-
-
-
 
 
 
