@@ -4,7 +4,7 @@ package com.Login.and.Registration.System.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table
+@Table(name = "`user`")
 public class User {
 
     @Id
@@ -17,14 +17,11 @@ public class User {
     @Column(name ="sur_name")
     private String surName;
 
-    @Column(name ="id_no")
+    @Column(name ="id_no",unique = true)
     private int idNo;
 
-    @Column(name ="email")
+    @Column(name ="email",unique = true)
     private String email;
-
-    @Column(name="password")
-    private String password;
 
     public Long getId() {
         return Id;
@@ -66,11 +63,4 @@ public class User {
         this.email = email;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
 }
