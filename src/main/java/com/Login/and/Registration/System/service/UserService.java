@@ -40,4 +40,8 @@ public class UserService {
     public List<User> getAll() {
         return userRepository.findAll();
     }
+
+    public Optional<User> updateByIdNo(int idNo){
+        return userRepository.updateByIdNo(idNo);
+    }
 }

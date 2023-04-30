@@ -48,4 +48,9 @@ public class UserController {
     public  Optional<User> findByEmail(@PathVariable String email){
         return userService.findByEmail(email);
     }
+
+    @PatchMapping("update")
+    public Optional<User> updateByIdNo(@PathVariable int idNo){
+        return userService.updateByIdNo(idNo);
+    }
 }
